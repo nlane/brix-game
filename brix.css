@@ -1,0 +1,88 @@
+body{
+	position: relative;
+	text-align: center;
+	margin-left: auto;
+  	margin-right: auto;
+}
+#header {
+	position: relative;
+	text-align: center;
+	display: inline;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+#titleText {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: xx-large;
+	font-weight: bold;
+	margin-top: 3px;
+	color: #424242;
+  	position: relative;
+  	display: inline;
+  	left: -220px;
+}
+
+#score {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: x-large;
+	margin-top: 3px;
+	color: #424242;
+	display: inline;
+	position: relative;
+	left: 220px;
+}
+#mainContent {
+	background-color: #191919;
+	border-radius: 4px;
+	padding: 5px;
+	width: 610px;
+	height: 600px;
+	margin-left: auto;
+  	margin-right: auto;
+  	position: relative;
+}
+#board{
+	width: 600px;
+	height: 350px;
+	/*position: relative;
+	text-align: center;*/
+}
+#board > div{
+	background-image:url('../assets/img/blue_brick.png');
+	/*background-color: red;*/
+	height: 30px;
+	width: 50px;
+	background-size: 50px;
+	background-position: center;
+	background-repeat: no-repeat;
+	/*float: left;*/
+	position:absolute;
+	padding: 0px;
+	background-clip: content-box;
+}
+
+#ball{
+	background-image:url('../assets/img/straight_emoji.png');
+	/*background-color: yellow;*/
+	background-size: 50px;
+	height: 100px;
+	width: 100px;
+	background-repeat: no-repeat;
+	position:absolute;
+	bottom:50px;
+	left: 50px;
+	top: 533px; /*important, don't forget 533*/
+}
+
+#paddle{
+	background-image:url('../assets/img/bottom_bar.png');
+	/*background-color: green;*/
+	background-size: 100px; 
+	height: 60px;
+	width: 100px;
+	background-repeat: no-repeat;
+	position:absolute;
+	bottom:0;
+	left: 255px;
+	padding: 0px;
+}
